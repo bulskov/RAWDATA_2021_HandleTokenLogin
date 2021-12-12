@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <link href="css/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container-fluid">
+    <div>
+        <button class="btn btn-primary" data-bind="click: gotoMovies">Show Movies</button>
+        <button class="btn btn-primary" data-bind="click: gotoRegister">Register</button>
+        <button class="btn btn-primary" data-bind="click: gotoLogin">Login</button>
+    </div>
+
+
+    <div data-bind="component: { name: currentView}"></div>
+
+    <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
+</body>
+</html>
